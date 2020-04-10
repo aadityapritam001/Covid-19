@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+<nav class="navbar navbar-inverse" style="background-color:cornflowerblue;">
+   <span class="navbar-text">
+      <p style="background-color: green;">COVID-19 Probability Detection</p>
+      <h4 style="color: black;">Prevention is better than cure</h4>
+   </span>
+      <div class=hv>
+      <a href="https://www.mygov.in/" title="Gov-helpline-link" target="_blank">
+      <img src="{{ url_for('static', filename='mygov_logo.png')}}" style="width: 80px; height: 60px; float: right; margin-top: 6px; margin-bottom: 6px; padding-right: 10px; ">
+      </a>
+      <a href="https://www.whatsapp.com/coronavirus/" title="Gov-helpline-link" target="_blank">
+         <img src="{{url_for('static',filename='whatsapp_help.jpg')}}" style="width: 80px; height: 60px; float: right; margin-top: 6px; margin-bottom: 6px; padding-right: 20px;">
+      </a>
+      <a href="https://www.mygov.in/covid-19/?cbps=1" title="Gov-helpline-link" target="_blank">
+         <img src="{{url_for('static',filename='help.jpg')}}" style="margin-top: 6px; width: 80px; height: 60px; margin-bottom: 6px; padding-left: 20px;">
+      </a>
+      <a href="https://www.mohfw.gov.in/pdf/ProtectivemeasuresEng.pdf" title="Gov-helpline-link" target="_blank">
+         <img src="{{url_for('static',filename='fight1.jpg')}}" style="margin-top: 6px; width: 120px; height: 60px; margin-bottom: 6px; padding-left: 20px;">
+      </a>
+      </div>
+</nav>
+<marquee behavior="scroll" direction="right"  style="background-color:crimson;">The most important factor in preventing the spread of the Virus locally is to empower the citizens with the right information and taking precautions!</marquee>
+       <table class="table table-striped">
+          <tbody>
+             <tr>
+                <td colspan="1">
+                   <form class="well form-horizontal"  action="/" method="POST">
+                     <div class="well form-horizontal" style="background-image: url('/static/corona-fight.jpg'); width:inherit; height: 300px;"></div>
+                      <fieldset>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Full Name</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullname" name="fullname" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Cough</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control" name="cough">
+                                     <option value="1">Yes</option>
+                                     <option value="0">No</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Runny Nose</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control" name="runny_nose">
+                                     <option value="1">Yes</option>
+                                     <option value="0">No</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                              <label class="col-md-4 control-label" >Fever</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span><input id="fever" name="fever" placeholder="98-104" class="form-control" required="true" value="" type="text"></div>
+                              </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Tightness of chest</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control" name="chest">
+                                     <option value="-1">No</option>
+                                     <option value="0">Very less</option>
+                                     <option value="1">High</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Breathing Problem</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control" name="breathing">
+                                     <option value="-1">No</option>
+                                     <option value="0">very less</option>
+                                     <option value="1">High</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Headache</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control" name="headache">
+                                     <option value="-1">No</option>
+                                     <option value="0">Very less</option>
+                                     <option value="1">High</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Pneumonia</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control" name="pneumonia">
+                                     <option value="1">Yes</option>
+                                     <option value="0">No</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label" >Age</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span><input id="age" name="age" placeholder="How old you are" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Gender</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control" name="gender">
+                                     <option value="0">Male</option>
+                                     <option value="1">Female</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Travelled in Last 15 days</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group">
+                                  <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                  <select class="selectpicker form-control" name="travel_15days">
+                                     <option value="1">Yes</option>
+                                     <option value="0">No</option>
+                                  </select>
+                               </div>
+                            </div>
+                         </div>
+                      </fieldset>
+                      <p>
+                        <button type="submit" style="background-color: cornflowerblue; float: right;">Submit</button>
+                     </p>
+                     </form>
+                     <nav class="navbar navbar-inverse " style="background-color:cornflowerblue;">
+                        <div class="">
+                          <div class="navbar-header" style="color:black;">
+                            <a class="navbar-brand" href="#" style="color: black;"><marquee behavior="scroll" direction="right" width=100%>The Helpline Number for corona-virus : +91-11-23978046 or 1075</marquee></a>
+                          </div>
+                        </div>
+                      </nav>
+                </td>
+             </tr>
+          </tbody>
+       </table>
+    </div>
+</body>
