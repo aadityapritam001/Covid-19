@@ -38,7 +38,7 @@ var w;
    /* Add a background color on hover */
    .btn-group button:hover {
      background-color: #3e8e41;
-     margin-right: 100px;
+     
    }
 
    html {
@@ -137,15 +137,11 @@ img {vertical-align: middle;}
           </div>
       </div>
   </div>
-<nav class="navbar navbar-inverse" style="background-image: url('/static/cv3.gif'); ">
+<nav class="navbar navbar-inverse" style="background-image: url('/static/cv3.gif');" >
    <span class="navbar-text">
       <h3 style="background-color: green;"><b>COVID-19 Probability Detection</b></h3>
       <h3 style="color: black;"><b>Prevention is better than cure</b></h3>
    </span>
-      <div class=hv>
-      <a href="https://www.mygov.in/" title="Gov-helpline-link" target="_blank">
-      <img src="{{ url_for('static', filename='mygov_logo.png')}}" style="width: 150px; height: 80px; float: right; margin-top: 10px; margin-bottom: 10px; margin-right: 10px; ">
-      </a>
       <!--
       <a href="https://www.whatsapp.com/coronavirus/" title="Gov-helpline-link" target="_blank">
          <img src="{{url_for('static',filename='whatsapp_help.jpg')}}" style="width: 80px; height: 60px; float: right; margin-top: 6px; margin-bottom: 6px; padding-right: 20px;">
@@ -168,9 +164,12 @@ img {vertical-align: middle;}
 <button><a href="https://www.pmindia.gov.in/en/?query#"  target="_blank" style="color: white;">PM Care Fund</a></button>
 <button><a href="https://www.mygov.in/group-issue/share-your-ideas-suggestions-help-fight-coronavirus/?utm_source=webcampaign&group_issue&285571"  target="_blank" style="color: white;">Join Discussion</a></button>
 <button><a href="https://www.mygov.in/aarogya-setu-app/?app=aarogya&target=browser"  target="_blank" style="color: white;">Download App</a></button>
-<button><a href="#section2" style="color: white;">Food Helpline Detail</a></button>
+<!-- <button><a href="#section2" style="color: white;">Food Helpline Detail</a></button> -->
 <button><a href="#section3" style="color: white;">Self Assessment</a></button>
 <button><a href="https://www.mohfw.gov.in/dashboard/index.php" style="color: white;">See Impact on India</a></button>
+<a href="https://www.mygov.in/" title="Gov-helpline-link" target="_blank">
+   <img src="{{ url_for('static', filename='mygov_logo.png')}}" style="width: 120px; height: 42px; ">
+   </a>
 </div>
 </nav>
 <marquee behavior="scroll" direction="right" style="background-color:transparent;"><h3><b>The most important factor in preventing the spread of the Virus locally is to empower the citizens with the right information and taking precautions!</b></h3></marquee>
@@ -219,8 +218,7 @@ img {vertical-align: middle;}
      setTimeout(showSlides, 4000); // Change image every 2 seconds
    }
    </script>
-   <div class="well form-horizontal" style="background-image: url('/static/corona-fight.jpg'); width:750; height:500px"></div>
-   <div id="section2" class="well form-horizontal" style="background-image: url('/static/food.jpeg'); width:750; height:500px"></div>         
+   <div class="" style="background-image: url('/static/corona-fight.jpg'); width: inherit; height: 300px; overflow: hidden; margin-left: -5px;"></div>         
    <table class="table table-striped">
           <tbody>
              <tr>
@@ -350,6 +348,7 @@ img {vertical-align: middle;}
                         <button type="submit" style="background-color:#3e8e41; float: right; width: 150px; height: 40px;">Submit</button>
                      </p>
                      </form>
+                     <!-- <div id="section2" class="well form-horizontal" style="background-image: url('/static/food.jpeg'); width:initial; height: 300px;"></div> -->
                      <nav class="navbar navbar-inverse " style="background-color:#3e8e41;">
                         <div class="">
                           <div class="navbar-header" style="color:black;">
