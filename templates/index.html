@@ -36,6 +36,7 @@ var w;
    /* Add a background color on hover */
    .btn-group button:hover {
      background-color: #3e8e41;
+     margin-right: 100px;
    }
 
    html {
@@ -49,7 +50,6 @@ var w;
    }
  </style>
 </head>
-<!------ Include the above in your HEAD tag ---------->
 <body>
    <div id="myModal" class="modal fade" style="width:inherit; height: inherit;">
       <div class="modal-dialog">
@@ -88,16 +88,17 @@ var w;
 </nav>
 <nav class="navbar" style="background-color:transparent;">
    <div class="">
-     <div class="navbar-header">
-       <a class="navbar-brand" style="color: black;"><marquee behavior="scroll" direction="right" width=100%>The Helpline Number for corona-virus : +91-11-23978046 or 1075</marquee></a>
+     <div class="">
+       <a class="" style="color: black;"><marquee behavior="scroll" direction="right"><b>The Helpline Number for corona-virus : +91-11-23978046 or 1075</b></marquee></a>
      </div>
    </div>
-<div id="section1" class="btn-group">
+<div id="section1" class="btn-group" style="margin-right: inherit;">
 <button><a href="https://www.mygov.in/covid-19/?cbps=1"  target="_blank" style="color: white;">More About Covid-19!</a></button>
 <button><a href="https://www.pmindia.gov.in/en/?query#"  target="_blank" style="color: white;">PM Care Fund</a></button>
 <button><a href="https://www.mygov.in/group-issue/share-your-ideas-suggestions-help-fight-coronavirus/?utm_source=webcampaign&group_issue&285571"  target="_blank" style="color: white;">Join Discussion</a></button>
 <button><a href="https://www.mygov.in/aarogya-setu-app/?app=aarogya&target=browser"  target="_blank" style="color: white;">Download App</a></button>
-<button><a href="#section2" style="color: white;">Self Assessment</a></button>
+<button><a href="#section2" style="color: white;">Food Helpline Detail</a></button>
+<button><a href="#section3" style="color: white;">Self Assessment</a></button>
 <button><a href="https://www.mohfw.gov.in/dashboard/index.php" style="color: white;">See Impact on India</a></button>
 </div>
 </nav>
@@ -108,8 +109,11 @@ var w;
                 <td colspan="1">
                    <form class="well form-horizontal"  action="/" method="POST">
                      <div class="well form-horizontal" style="background-image: url('/static/corona-fight.jpg'); width:inherit; height:630px"></div>
-                      <fieldset>
-                         <div id="section2" class="form-group">
+                     <div id="section2" class="well form-horizontal" style="background-image: url('/static/food.jpeg'); width:inherit; height:350px"></div> 
+                     <div id="section2" class="well form-horizontal" style="background-image: url('/static/modi.jpg'); width:inherit; height:700px"></div> 
+                     <fieldset>
+                         <div id="section3" class="form-group">
+                            <h3>Self Assessment</h3>
                             <label class="col-md-4 control-label">Full Name</label>
                             <div class="col-md-8 inputGroupContainer">
                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullname" name="fullname" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
