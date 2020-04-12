@@ -6,12 +6,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-var w;
-
 	$(document).ready(function(){
 		$("#myModal").modal('show');
-      w.resizeTo(900,900);
-	});
+      	});
 </script>
 <style>
    
@@ -123,15 +120,15 @@ img {vertical-align: middle;}
 </head>
 <body>
    <div id="myModal" class="modal fade">
-      <div class="modal-dialog" >
-          <div class="modal-content"  style="width:inherit">
-              <div class="modal-header" style="width:400px">
+      <div class="modal-dialog" style="width:inherit">
+          <div class="modal-content">
+              <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   <h4 class="modal-title">Covid-19</h4>
               </div>
               <div class="modal-body" style="width: inherit" >
               <a href="#" title="Gov-helpline-link" target="_blank">
-               <img src="{{url_for('static',filename='safe.jpeg')}}" style="width: 580px; height:600px">
+               <img src="{{url_for('static',filename='safe.jpeg')}}" style="width: 480px; height:inherit">
              </a>
               </div>
           </div>
