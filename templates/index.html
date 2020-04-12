@@ -122,16 +122,16 @@ img {vertical-align: middle;}
  </style>
 </head>
 <body>
-   <div id="myModal" class="modal fade" style="width:inherit; height: inherit;">
-      <div class="modal-dialog">
-          <div class="modal-content">
+   <div id="myModal" class="modal fade">
+      <div class="modal-dialog" >
+          <div class="modal-content"  style="width:480px">
               <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   <h4 class="modal-title">Covid-19</h4>
               </div>
-              <div class="modal-body" style="size: inherit;">
-              <a href="https://www.whatsapp.com/coronavirus/" title="Gov-helpline-link" target="_blank">
-               <img src="{{url_for('static',filename='safe.jpeg')}}" style="width:570px; height:600px">
+              <div class="modal-body" style="width: inherit" >
+              <a href="#" title="Gov-helpline-link" target="_blank">
+               <img src="{{url_for('static',filename='safe.jpeg')}}" style="width: 440px; height:600px">
              </a>
               </div>
           </div>
@@ -218,14 +218,14 @@ img {vertical-align: middle;}
      dots[slideIndex-1].className += " active";
      setTimeout(showSlides, 4000); // Change image every 2 seconds
    }
-   </script>        
-<table class="table table-striped">
+   </script>
+   <div class="well form-horizontal" style="background-image: url('/static/corona-fight.jpg'); width:750; height:500px"></div>
+   <div id="section2" class="well form-horizontal" style="background-image: url('/static/food.jpeg'); width:750; height:500px"></div>         
+   <table class="table table-striped">
           <tbody>
              <tr>
                 <td colspan="1">
                    <form class="well form-horizontal"  action="/" method="POST">
-                     <div class="well form-horizontal" style="background-image: url('/static/corona-fight.jpg'); width:inherit; height:630px"></div>
-                     <div id="section2" class="well form-horizontal" style="background-image: url('/static/food.jpeg'); width:inherit; height:350px"></div> 
                      <fieldset>
                          <div id="section3" class="form-group" style="width: inherit;">
                             <h3>Self Assessment</h3>
