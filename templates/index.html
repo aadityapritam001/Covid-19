@@ -174,60 +174,60 @@ img {vertical-align: middle;}
 </div>
 </nav>
 <marquee behavior="scroll" direction="right" style="background-color:transparent;"><h3><b>The most important factor in preventing the spread of the Virus locally is to empower the citizens with the right information and taking precautions!</b></h3></marquee>
-       <table class="table table-striped">
+<table class="table table-striped">
+   <div class="slideshow-container">
+   <div class="mySlides fade">
+     <div class="numbertext">1 / 3</div>
+     <img src="/static/modi.jpg" style="width:100%">
+   </div>
+   
+   <div class="mySlides fade">
+     <div class="numbertext">2 / 3</div>
+     <img src="/static/jitega.jpeg" style="width:100%">
+   </div>
+   
+   <div class="mySlides fade">
+     <div class="numbertext">3 / 3</div>
+     <img src="/static/modi1.jpeg" style="width:100%">
+   </div>
+   </div>
+   <br> 
+   <div style="text-align:center">
+     <span class="dot"></span> 
+     <span class="dot"></span> 
+     <span class="dot"></span> 
+   </div>
+   
+   <script>
+   var slideIndex = 0;
+   showSlides();
+   
+   function showSlides() {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     var dots = document.getElementsByClassName("dot");
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+     }
+     slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1}    
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+     }
+     slides[slideIndex-1].style.display = "block";  
+     dots[slideIndex-1].className += " active";
+     setTimeout(showSlides, 4000); // Change image every 2 seconds
+   }
+   </script>        
+<table class="table table-striped">
           <tbody>
              <tr>
                 <td colspan="1">
                    <form class="well form-horizontal"  action="/" method="POST">
                      <div class="well form-horizontal" style="background-image: url('/static/corona-fight.jpg'); width:inherit; height:630px"></div>
                      <div id="section2" class="well form-horizontal" style="background-image: url('/static/food.jpeg'); width:inherit; height:350px"></div> 
-                     <table class="table table-striped">
-                        <div class="slideshow-container">
-                        <div class="mySlides fade">
-                          <div class="numbertext">1 / 3</div>
-                          <img src="/static/modi.jpg" style="width:100%">
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <div class="numbertext">2 / 3</div>
-                          <img src="/static/jitega.jpeg" style="width:100%">
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <div class="numbertext">3 / 3</div>
-                          <img src="/static/modi1.jpeg" style="width:100%">
-                        </div>
-                        </div>
-                        <br> 
-                        <div style="text-align:center">
-                          <span class="dot"></span> 
-                          <span class="dot"></span> 
-                          <span class="dot"></span> 
-                        </div>
-                        
-                        <script>
-                        var slideIndex = 0;
-                        showSlides();
-                        
-                        function showSlides() {
-                          var i;
-                          var slides = document.getElementsByClassName("mySlides");
-                          var dots = document.getElementsByClassName("dot");
-                          for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";  
-                          }
-                          slideIndex++;
-                          if (slideIndex > slides.length) {slideIndex = 1}    
-                          for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                          }
-                          slides[slideIndex-1].style.display = "block";  
-                          dots[slideIndex-1].className += " active";
-                          setTimeout(showSlides, 4000); // Change image every 2 seconds
-                        }
-                        </script> 
                      <fieldset>
-                         <div id="section3" class="form-group">
+                         <div id="section3" class="form-group" style="width: inherit;">
                             <h3>Self Assessment</h3>
                             <label class="col-md-4 control-label">Full Name</label>
                             <div class="col-md-8 inputGroupContainer">
