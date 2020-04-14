@@ -20,6 +20,10 @@ with open("model.pkl",'rb') as f:
 # )
 # mail=Mail(app)
 
+@app.route('/precaution')
+def precaution():
+    return render_template('precaution.html')
+
 @app.route('/', methods=["GET","POST"])
 def take_input():
     if request.method =="POST":
