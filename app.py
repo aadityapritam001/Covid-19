@@ -41,6 +41,7 @@ def take_input():
     #code for predic on given input 
         var=[[cough,runny_nose,fever,chest,breath,headache,pneumonia,age,gender,travell]]
         ans1=clf.predict(var)
+        prob=clf.predict_proba(var)[0][1]*100
         l=[]
         if(ans1==1):
             ans="Positive, Please contact nearest health centre"
@@ -61,7 +62,8 @@ def take_input():
                 l.append("Pneumonia")
             if(travell>0):
                 l.append("You travelled in last 15 days , so there may be more chances matching with corona-patients")
-                
+            
+            prob=prob+30
             
             # msg = Message(subject="Hi there, this person -"+name,
             #     sender="covid-19helpline@ac.in",
@@ -74,7 +76,7 @@ def take_input():
             ans="Negative"
             l.append("None")
 
-        prob=clf.predict_proba(var)[0][1]*100
+       
         return render_template('result.html',ans=ans,prob=round(prob),lst=l)
         
     
